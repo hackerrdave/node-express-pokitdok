@@ -1,0 +1,303 @@
+//Sample JSON response for '/providers'
+{
+  "meta": {
+    "rate_limit_amount": 1,
+    "rate_limit_reset": 1440714246,
+    "application_mode": "production",
+    "result_count": 143703,
+    "processing_time": 366,
+    "rate_limit_cap": 1000,
+    "credits_remaining": 19,
+    "next": "https:\/\/platform.pokitdok.com\/api\/v4\/providers\/?limit=5&radius=10mi&zipcode=10009&offset=5",
+    "activity_id": "55df7ff63fe8fa011ac51fd6",
+    "credits_billed": 1
+  },
+  "data": [
+    {
+      "distance": "0.0243462970834",
+      "provider": {
+        "first_name": "SUZANNE",
+        "last_name": "KNAPP",
+        "middle_name": "MILLAR",
+        "uuid": "be38a848-19a0-400b-92cd-1f099347b0a8",
+        "gender": "Female",
+        "verified": false,
+        "specialty": [
+          "Social Worker",
+          "Behavioral Health & Social Service"
+        ],
+        "specialty_primary": [
+          "Social Worker"
+        ],
+        "locations": [
+          {
+            "address_lines": [
+              "362 E 10th St Apt 3E"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10009",
+            "phone": "2399102205",
+            "state": "NY",
+            "geo_location": [
+              -73.97915,
+              40.7263
+            ],
+            "role": [
+              "mailing"
+            ]
+          },
+          {
+            "address_lines": [
+              "74 Saint Marks Pl"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10003",
+            "phone": "2124771565",
+            "state": "NY",
+            "geo_location": [
+              -73.98651,
+              40.72784
+            ],
+            "role": [
+              "practice"
+            ]
+          }
+        ],
+        "phone": "2124771565",
+        "licenses": [
+          {
+            "state": "NY",
+            "number": "083719"
+          }
+        ],
+        "npi": "1497026421",
+        "specialty_secondary": [
+          "Behavioral Health & Social Service"
+        ]
+      }
+    },
+    {
+      "distance": "0.0322459771926",
+      "provider": {
+        "first_name": "KASEY",
+        "last_name": "WOODIN",
+        "npi": "1598171787",
+        "uuid": "55da59cb-7608-4b28-910e-958fd016521b",
+        "gender": "Female",
+        "specialty": [
+          "Registered Nurse"
+        ],
+        "specialty_primary": [
+          "Registered Nurse"
+        ],
+        "locations": [
+          {
+            "address_lines": [
+              "649 E 9th St Apt 4C"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10009",
+            "state": "NY",
+            "geo_location": [
+              -73.97914,
+              40.72587
+            ],
+            "role": [
+              "mailing",
+              "practice"
+            ]
+          }
+        ],
+        "phone": "4252560701",
+        "licenses": [
+          {
+            "state": "NY",
+            "number": "686425-1"
+          }
+        ],
+        "verified": false
+      }
+    },
+    {
+      "distance": "0.0324677379089",
+      "provider": {
+        "first_name": "VICKIE",
+        "last_name": "LEE",
+        "middle_name": "Y",
+        "uuid": "829945cc-ceb4-420e-8296-7f77e67c90b2",
+        "gender": "Female",
+        "verified": false,
+        "specialty": [
+          "Acupuncturist",
+          "Alternative Medicine"
+        ],
+        "specialty_primary": [
+          "Acupuncturist",
+          "Alternative Medicine"
+        ],
+        "locations": [
+          {
+            "address_lines": [
+              "12 W 27th St Fl 9"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10001",
+            "phone": "6463891803",
+            "state": "NY",
+            "geo_location": [
+              -73.98938,
+              40.74452
+            ],
+            "role": [
+              "practice"
+            ]
+          },
+          {
+            "address_lines": [
+              "143 Avenue B Apt 11D"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10009",
+            "phone": "9173120330",
+            "state": "NY",
+            "geo_location": [
+              -73.98019,
+              40.72631
+            ],
+            "role": [
+              "mailing"
+            ]
+          }
+        ],
+        "phone": "6463891803",
+        "licenses": [
+          {
+            "state": "NY",
+            "number": "004507"
+          }
+        ],
+        "npi": "1598060741"
+      }
+    },
+    {
+      "distance": "0.0447923046065",
+      "provider": {
+        "first_name": "JAMES",
+        "last_name": "ANDRALIS",
+        "npi": "1083948145",
+        "uuid": "fc229dd4-334b-4aba-80cf-980eea126808",
+        "gender": "Male",
+        "specialty": [
+          "Counselor",
+          "Mental Health Counselor",
+          "Behavioral Health & Social Service"
+        ],
+        "specialty_primary": [
+          "Counselor",
+          "Mental Health Counselor"
+        ],
+        "locations": [
+          {
+            "address_lines": [
+              "626 E 9th St Apt 3Fe"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10009",
+            "phone": "9179811621",
+            "state": "NY",
+            "geo_location": [
+              -73.97926,
+              40.72559
+            ],
+            "role": [
+              "mailing"
+            ]
+          },
+          {
+            "address_lines": [
+              "799 Broadway Ste 332"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10003",
+            "phone": "2124797919",
+            "state": "NY",
+            "geo_location": [
+              -73.94006,
+              40.69993
+            ],
+            "role": [
+              "practice"
+            ]
+          }
+        ],
+        "phone": "2124797919",
+        "prefix": "MR",
+        "licenses": [
+          {
+            "state": "NY",
+            "number": "001205"
+          }
+        ],
+        "verified": false,
+        "specialty_secondary": [
+          "Behavioral Health & Social Service"
+        ]
+      }
+    },
+    {
+      "distance": "0.0482139668707",
+      "provider": {
+        "first_name": "JILL",
+        "last_name": "MCINTYRE",
+        "npi": "1972744142",
+        "uuid": "2d8006ce-5e90-4f51-a2fb-861edc2db004",
+        "gender": "Female",
+        "specialty": [
+          "Allied Health",
+          "Occupational Therapy"
+        ],
+        "specialty_primary": [
+          "Occupational Therapy"
+        ],
+        "locations": [
+          {
+            "address_lines": [
+              "309 E 8th St Apt E2"
+            ],
+            "city": "New York",
+            "country": "US",
+            "zipcode": "10009",
+            "phone": "9179525559",
+            "state": "NY",
+            "geo_location": [
+              -73.97981,
+              40.72551
+            ],
+            "role": [
+              "mailing",
+              "practice"
+            ]
+          }
+        ],
+        "phone": "9179525559",
+        "licenses": [
+          {
+            "state": "NY",
+            "number": "007017-1"
+          }
+        ],
+        "verified": false,
+        "specialty_secondary": [
+          "Allied Health"
+        ]
+      }
+    }
+  ]
+}
