@@ -2,7 +2,7 @@
   "name": "responsive-nodular-emails",
   "description": "learning how to make reponsive emails with node, yeoman, ink",
   "scripts": {
-    "start": "node app.js"
+    "start": "export PORT=${PORT:=3001} && node app.js --port $PORT" 
   },
   "dependencies": {
     "express": "^4.13.3",
