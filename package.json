@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "pokitdok-nodejs": "0.0.7"
+    "pokitdok-nodejs": "0.0.7",
+    "pryjs": "^0.1.1"
   }
 }
