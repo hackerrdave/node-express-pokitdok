@@ -5,6 +5,11 @@ var PokitDok = require('pokitdok-nodejs');
 var pokitdok = new PokitDok(process.env.POKITDOK_CLIENT_ID, process.env.POKITDOK_CLIENT_SECRET);
 var pry = require('pryjs');
 
+var basicAuth = require('basic-auth-connect');
+var username = process.env.USERNAME || "";
+var password = process.env.PASSWORD || "";
+app.use(basicAuth(username, password));
+
 app.get('/providers', function(req, res) {
   
   pokitdok.providers({
