@@ -25,12 +25,46 @@ app.get('/providers', function(req, res) {
 
 app.get('/enrollment', function(req, res) {
   var query = url.parse(req.url, true).query;
-  res.send(query);
+
+  var birthDate = query.birthDate || null;
+  var firstName = query.firstName || null;
+  var lastName = query.lastName || null;
+  var id = query.id || null;
+  var providerFirstName = query.providerFirstName || null;
+  var providerLastName = query.providerLastName || null;
+  var providerNPI = query.providerNPI || null;
+  var serviceTypes = ['health_benefit_plan_coverage'];
+  var tradingPartnerId = query.tradingPartnerId || null;
+
+  pokitdok.enrollment({
+    member: {
+      birth_date: birthDate,
+      first_name: firstName,
+      last_name: lastName,
+      id: id
+    },
+    provider: {
+      first_name: providerFirstName,
+      last_name: providerLastName,
+      npi: providerNPI
+    },
+    service_types: serviceTypes,
+    trading_partner_id: tradingPartnerId
+  }, function(error, response) {
+    if (error) {
+      console.log(error.message); 
+      return res.send("<h1>" + error.message + "</h1>"); 
+    }
+    res.send(response);
+  });
 });
 
 app.get('/partners', function(req, res) {
   pokitdok.tradingPartners(function(error, response) {
-    if (error) { return res.send(error + ", " + response.code); }
+    if (error) {
+      console.log(error, response); 
+      return res.send(error + ", " + response.code); 
+    }
 
     res.send(response);
   });
