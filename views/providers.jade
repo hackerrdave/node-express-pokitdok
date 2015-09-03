@@ -1,0 +1,46 @@
+extends ./base.jade
+
+block content
+  h1 Providers
+  a(href="/") Go Back to Index
+  form(name="providers", method="post" class="pure-form pure-form-stacked")
+    fieldset
+      legend Get Provider Information
+      
+      label Limit
+        input(type="text", name="limit", placeholder=5)
+      span Limit # Of Results to be Shown (Default: 5)
+      
+      label City
+      input(type="text", name="city", placeholder="San Mateo")
+      span Name of city in which to search for providers (e.g. “San Mateo” or “Charleston”)
+      
+      label First Name
+      input(type="text", name="first_name")
+      
+      label Last Name
+      input(type="text", name="last_name")
+      
+      label Organization Name
+      input(type="text", name="organization_name")
+      span The business practice name
+      
+      label Radius
+      input(type="text", name="radius", placeholder="20mi")
+      span (Default: 20mi)
+      
+      label Specialty
+      input(type="text", name="specialty")
+      
+      label State
+      input(type="text", name="state")
+      
+      label Zipcode
+      input(type="text", name="zipcode")
+      
+      label Sort
+      input(type="text", name="sort")
+      span Accepted values include ‘distance’ (default) or 'rank’. 'distance’ sort requires city / state or zipcode parameters otherwise sort will be 'rank’.
+      br
+      br
+      button(type="submit", class="pure-button pure-button-primary") Submit

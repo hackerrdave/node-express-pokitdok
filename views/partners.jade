@@ -1,0 +1,15 @@
+extends ./base.jade
+
+block content
+  h1 Partners
+  a(href="/") Go Back to Index
+  form(name="providers", method="post" class="pure-form pure-form-stacked")
+    fieldset
+      legend Partner Info
+      
+      label ID
+        input(type="text", name="partner_id")
+      
+      br
+      br
+      button(type="submit", class="pure-button pure-button-primary") Submit

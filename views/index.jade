@@ -1,0 +1,29 @@
+extends ./base.jade
+
+block content
+	h1 PokitDok API Endpoints
+	ul
+		li: a(href="/plans") Plans
+		li: a(href="/providers") Providers
+		li: a(href="/eligibility") Eligibility
+		li: a(href="/partners") Partners
+		li: a(href="/claim-status") Claim Status
+
+	block success
+
+	form(name="providers", method="post" class="pure-form pure-form-stacked")
+		fieldset
+			legend SET YOUR API CREDENTIALS
+      
+			label PokitDok Client Id
+			input(type="text", name="pokitdok_client_id")
+
+			label PokitDok Client Secret
+			input(type="text", name="pokitdok_client_secret")      
+			br
+			br
+			button(type="submit", class="pure-button pure-button-primary") Submit
+
+
+	p: a(href="https://platform.pokitdok.com/documentation/v4/#available-api-endpoints") PokitDok API Docs
+	p: a(href="https://github.com/davek09/node-express-pokitdok") View Code for this app on Github

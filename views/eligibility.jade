@@ -1,0 +1,54 @@
+extends ./base.jade
+
+block content
+  h1 Eligibility
+  a(href="/") Go Back to Index
+  form(name="claim-status", method="post" class="pure-form pure-form-stacked")
+    fieldset
+      legend Member Info
+      
+      label Birthdate
+        input(type="text", name="member_birth_date", placeholder="1970-01-01")
+      
+      label ID
+      input(type="text", name="member_id", placeholder="1234567890")
+      
+      label First Name
+      input(type="text", name="member_first_name")
+      
+      label Last Name
+      input(type="text", name="member_last_name")
+    
+    fieldset
+      legend Provider Info
+
+      label First Name
+      input(type="text", name="provider_first_name")
+      
+      label Last Name
+      input(type="text", name="provider_last_name")
+      
+      label NPI
+      input(type="text", name="provider_npi")
+      
+      label Organization Name
+      input(type="text", name="provider_organization_name")
+    
+    fieldset
+      legend Service Info
+
+      label Service Date
+      input(type="text", name="service_date", placeholder="2015-09-01")
+
+      label Service End Date
+      input(type="text", name="service_date_end", placeholder="2015-09-01")
+
+      label Service Type
+      input(type="text", name="service_type", placeholder="health_benefit_plan_coverage")
+
+      label Trading Partner ID
+      input(type="text", name="trading_partner_id", placeholder="cigna")
+
+      br
+      br
+      button(type="submit", class="pure-button pure-button-primary") Submit

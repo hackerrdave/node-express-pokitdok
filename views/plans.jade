@@ -1,0 +1,33 @@
+extends ./base.jade
+
+block content
+  h1 Plans
+  a(href="/") Go Back to Index
+  form(name="plans", method="post" class="pure-form pure-form-stacked")
+    fieldset
+      legend Plan Info
+      
+      label Trading Partner ID
+        input(type="text", name="trading_partner_id", placeholder="cigna")
+      
+      label County
+      input(type="text", name="county")
+      
+      label State
+      input(type="text", name="state")
+      
+      label Plan ID
+      input(type="text", name="plan_id")
+
+      label Plan Type
+      input(type="text", name="plan_type")
+
+      label Plan Name
+      input(type="text", name="plan_name")
+
+      label Metallic Level
+      input(type="text", name="metallic_level")
+
+      br
+      br
+      button(type="submit", class="pure-button pure-button-primary") Submit
