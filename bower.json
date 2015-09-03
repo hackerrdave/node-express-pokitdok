@@ -1,0 +1,7 @@
+{
+  "name": "responsive-nodular-emails",
+  "description": "learning how to make reponsive emails with node, yeoman, ink",
+  "dependencies": {
+    "pure": "~0.6.0"
+  }
+}

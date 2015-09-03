@@ -11,6 +11,7 @@ app.locals.pretty = true;
 app.use(basicAuth(username, password));
 app.set('views', './views');
 app.set('view engine', 'jade');
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use("/styles", express.static(__dirname + "/styles"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
