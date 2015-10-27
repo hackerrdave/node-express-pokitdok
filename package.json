@@ -11,7 +11,6 @@
     "bower": "^1.5.2",
     "express": "^4.13.3",
     "jade": "^1.11.0",
-    "pokitdok-nodejs": "0.0.7",
-    "pryjs": "^0.1.1"
+    "pokitdok-nodejs": "0.0.7"
   }
 }

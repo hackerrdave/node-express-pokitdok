@@ -2,7 +2,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var url = require('url');
-var pry = require('pryjs');
 
 var basicAuth = require('basic-auth-connect');
 var username = process.env.USERNAME || "";
@@ -23,7 +22,7 @@ function flattenParams(params) {
     if(!params[key]) {
         delete params[key];
     } else if (typeof params[key] === "object") {
-      var innerParams = params[key]
+      var innerParams = params[key];
       for (var innerKey in innerParams) {
         if (!innerParams[innerKey]) {
           delete innerParams[innerKey];
@@ -31,7 +30,7 @@ function flattenParams(params) {
       }
     }
   }
-  return params
+  return params;
 }
 
 app.get('/', function(req, res) {
@@ -41,8 +40,8 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
   var data = req.body;
 
-  process.env['POKITDOK_CLIENT_ID'] = data.pokitdok_client_id;
-  process.env['POKITDOK_CLIENT_SECRET'] = data.pokitdok_client_secret;
+  process.env.POKITDOK_CLIENT_ID = data.pokitdok_client_id;
+  process.env.POKITDOK_CLIENT_SECRET = data.pokitdok_client_secret;
 
   res.render('index-success');
 });
@@ -94,7 +93,7 @@ app.post('/providers', function(req, res) {
     state:              data.state,
     zipcode:            Number(data.zipcode),
     sort:               data.sort
-  }
+  };
 
   var params = flattenParams(providerParams);
 
